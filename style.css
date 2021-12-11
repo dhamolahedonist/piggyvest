@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #0d1825;
+  --color-secondary: #0d60d8;
+}
 *,
 *::after,
 ::before {
@@ -48,12 +52,22 @@ a {
   text-decoration: none;
 }
 /* Header section */
-.container {
-  width: 90%;
-  display: flex;
+#header {
+  min-height: 4vw;
+  width: 100%;
+  display: grid;
   align-items: center;
   justify-content: space-around;
+  border-radius: 7px;
+  box-shadow: 0 10px 10px #f3f3f3;
+  grid-template-columns: 4fr 2fr;
 }
+
+#header .nav-bar-logo {
+  display: flex;
+  justify-content: start;
+}
+
 #header .nav-bar {
   list-style: none;
   padding-left: 0;
@@ -61,39 +75,69 @@ a {
   justify-content: center;
   margin-top: 2rem;
 }
-/* #header .container {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
-#header .head-element {
+#header .logo {
   margin-left: 20rem;
   margin-top: 3rem;
 }
-/* #header .logo img {
-  position: relative;
-  padding-right: 50px !important;
-  bottom: 3px !important;
-} */
+
 .nav-item {
   padding: 0 2rem;
-  line-height: 3.2;
+  line-height: 4;
+  font-size: 16px;
 }
 .nav-item > a {
   color: #000;
 }
-/* btn */
-#btn-group {
-  margin-left: auto;
-}
-#btn-group .list-btn {
+
+#header .nav-bar-auth {
   display: flex;
   padding: 0 2rem;
   list-style: none;
-  margin-top: 1rem;
-  border-radius: 10px;
-  border: 1px solid;
+  margin: 0 auto;
   overflow: hidden;
   width: 100%;
+}
+
+.auth-btn {
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 0 10px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.auth-btn > a {
+  font-size: 16.5px;
+}
+.login {
+  border: 1px solid var(--color-primary);
+}
+.login > a {
+  color: var(--color-primary);
+}
+
+.login:hover {
+  border: 1px solid var(--color-secondary);
+}
+
+.login > a:hover {
+  color: var(--color-secondary);
+}
+
+.register {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.register > a {
+  color: #fff;
+}
+
+.register:hover {
+  background: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  opacity: 1;
+}
+.align {
+  margin: 0 auto;
 }
