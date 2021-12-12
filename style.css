@@ -178,7 +178,7 @@ a {
 }
 #invest .invest-container {
   margin-left: 10rem;
-  margin-top: 20rem;
+  margin-top: 0;
 }
 #invest .invest-container > h1 {
   font-size: 65px;
@@ -187,4 +187,54 @@ a {
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 200;
+}
+#invest .download-container {
+  margin-top: 30px;
+}
+
+#invest .download-container img {
+  height: 15px;
+}
+/* picture section */
+#invest .picture-img {
+  position: relative;
+  display: inline-flex;
+  left: -44px;
+  top: 30px;
+  height: 35vw;
+  margin-top: 100px;
+}
+#invest .rect {
+  position: absolute;
+  width: 25vw;
+  margin-top: 100px;
+}
+#invest .icon {
+  position: relative;
+  width: 300px;
+}
+#invest .icon-menu {
+  left: -700px;
+  top: -300px;
+}
+#invest .cross {
+  width: 100px;
+  position: relative;
+}
+#invest .cross-menu {
+  left: -860px;
+  top: -480px;
+}
+#invest .icon-bar {
+  left: 230px;
+  top: -200px;
+}
+#invest .icon-circle {
+  fill: none;
+  left: 87px;
+  top: -500px;
+}
+#invest .icon-dot {
+  left: -61px;
+  top: -400px;
 }
