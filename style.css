@@ -198,17 +198,21 @@ a {
 /* picture section */
 #invest .picture img {
   margin-top: 50px;
-  width: 1000px;
+  max-width: 1000px;
 }
 /* specific media query */
 @media screen and (max-width: 768px) {
-  #invest .invest-container {
-    align-self: center;
+  #invest {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
-  .picture img {
-    display: block;
+  #invest h1 {
+    text-align: center;
   }
+  /* #invest .btn-light {
+    align-self: center;
+  } */
 }
 
 /* margin-top: 60px; */
@@ -221,8 +225,8 @@ a {
   grid-template-columns: 1.5fr 2fr;
 }
 #security-container img {
-  width: 100px;
-  margin-left: 610px;
+  max-width: 100px;
+  margin-left: 400px;
   padding-top: 50px;
 }
 #security-container h1 {
@@ -230,11 +234,102 @@ a {
   font-size: 30px;
 }
 #security-container p {
-  font-size: 15px;
+  font-size: 14px;
 }
 #security-container .link {
   font-size: 16px;
   color: var(--color-secondary);
   font-weight: 700;
   padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  #security-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #security-container img {
+    margin-left: 0px;
+  }
+
+  #security-container .security-content {
+    text-align: center;
+  }
+}
+/* savings section */
+#savings-container {
+  min-height: 7vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 4fr;
+  margin-top: 10rem;
+}
+#savings-container h2 {
+  font-size: 30px;
+  margin-left: 10rem;
+}
+#savings-container p {
+  font-size: 14px;
+  margin-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#savings-container a {
+  margin-left: 10rem;
+}
+
+#savings-container .card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 83%;
+}
+
+#savings-container .card {
+  width: 350px;
+  height: 350px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+#savings-container img {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+#savings-container h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+#savings-container .saving-item {
+  margin-left: 50px;
+  font-size: 13px;
+}
+#savings-container .pointer {
+  display: flex;
+  margin-left: 50px;
+}
+
+#savings-container span {
+  margin-left: 10px;
+  font-size: 16.5px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  #savings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .savings-left {
+    margin-left: 0;
+  }
+  #savings-container .card-row {
+    display: flex;
+    flex-direction: column;
+  }
 }
