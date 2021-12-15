@@ -145,25 +145,25 @@ a {
 }
 /* Specific header media queires for mobile */
 @media screen and (max-width: 768px) {
-  #header .nav-mobile-menu {
-    display: block;
-    margin-right: 30px;
-  }
-  .nav-mobile-menu > a {
-    color: #000;
-  }
-  #header .nav-bar-auth,
-  #header .nav-bar {
-    display: none;
-  }
-  #header {
-    display: flex;
-    justify-content: space-between;
-  }
+}
+#header .nav-mobile-menu {
+  display: block;
+  margin-right: 30px;
+}
+.nav-mobile-menu > a {
+  color: #000;
+}
+#header .nav-bar-auth,
+#header .nav-bar {
+  display: none;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+}
 
-  #header .logo {
-    margin-left: 10px;
-  }
+#header .logo {
+  margin-left: 10px;
 }
 /** END OF HEADER SECTION **/
 /* save and invest */
@@ -210,9 +210,13 @@ a {
   #invest h1 {
     text-align: center;
   }
-  /* #invest .btn-light {
-    align-self: center;
-  } */
+  #invest .download-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #invest .picture {
+    width: 100%;
+  }
 }
 
 /* margin-top: 60px; */
@@ -331,5 +335,93 @@ a {
   #savings-container .card-row {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+}
+/* investment section */
+#investment {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 50px;
+}
+#investment .investment-container {
+  margin-left: 200px;
+}
+#investment .tag {
+  background: #f7f0ff;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  width: 170px;
+  font-size: 15px;
+  color: #854fe6;
+  padding: 0 1.7rem;
+  margin-top: 0px;
+}
+#investment p {
+  width: 30vw;
+  font-size: 14px;
+  margin-top: 30px;
+}
+#investment .heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#investment .link-2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+#savers {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 50px;
+}
+#savers .savers-box {
+  background: #0d60d8;
+  height: 400px;
+}
+#savers h1 {
+  font-size: 50px;
+  color: #fff;
+  width: 75%;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+#savers p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 90px;
+}
+#savers .savers-image {
+  /* height: 400px; */
+}
+#savers .icon {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+#savers .pointer {
+  display: flex;
+}
+#savers span {
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 16.5px;
+}
+
+@media screen and (max-width: 768px) {
+  #savers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
