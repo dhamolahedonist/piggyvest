@@ -170,7 +170,7 @@ a {
 #invest {
   min-height: 10vw;
   width: 100%;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 7px;
@@ -393,7 +393,7 @@ a {
   width: 75%;
   text-align: left;
   margin-left: 90px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 #savers p {
   color: #fff;
@@ -401,9 +401,7 @@ a {
   text-align: left;
   margin-left: 90px;
 }
-#savers .savers-image {
-  /* height: 400px; */
-}
+
 #savers .icon {
   margin-left: 90px;
   margin-top: 30px;
@@ -424,4 +422,122 @@ a {
     flex-direction: column;
     width: 100%;
   }
+}
+/* Testimonial */
+#testimonial-container {
+  min-height: 10vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr;
+}
+
+.invest-container h2 {
+  margin-top: 100px;
+  width: 100%;
+}
+#invests {
+  min-height: 10vw;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  grid-template-columns: 2fr 2fr;
+  padding-left: 2rem;
+}
+#invests p {
+  line-height: 3rem;
+  font-size: 16.5px;
+  margin-bottom: 30px;
+}
+
+#invests .download-container {
+  margin-top: 30px;
+}
+#testimonial-container p {
+  line-height: 3rem;
+  font-size: 16.5px;
+  margin-bottom: 30px;
+}
+/* feature */
+#feature {
+  background: #f9f9f9;
+  display: grid;
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  grid-template-columns: 2fr 3fr;
+}
+#feature h1 {
+  margin-left: 15rem;
+  font-size: 35px;
+  color: var(--color-font);
+  margin-top: 50px;
+}
+#feature .techcrunch img {
+  width: 50%;
+  padding-top: 1rem;
+}
+#feature .techpoint {
+  width: 50%;
+  padding-top: 3rem;
+}
+#feature .guardian {
+  width: 50%;
+  padding-top: 2rem;
+}
+#feature .sponsor {
+  display: flex;
+  justify-content: none;
+  margin-top: 30px;
+  width: 75%;
+}
+#footer {
+  grid-template-columns: 2fr 4fr;
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+#footer .logo {
+  margin-left: 10rem;
+}
+#footer .list {
+  display: flex;
+}
+#footer .list-item {
+  list-style: none;
+  font-size: 13px;
+}
+#footer a {
+  color: var(--color-font);
+}
+#footer h2 {
+  font-size: 16.5px;
+  color: var(--color-primary);
+}
+#footer .list-A {
+  padding: 0 5rem;
+}
+#footer .contact {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+#footer .number {
+  text-align: right;
+}
+#bio {
+  margin-top: 7rem;
+  font-size: 13px;
+  width: 65%;
+  text-align: center;
+  margin-left: 20rem;
+}
+#bio h4 {
+  color: var(--color-secondary);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
