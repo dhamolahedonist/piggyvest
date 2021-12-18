@@ -279,11 +279,14 @@ a {
   margin-left: 10rem;
 }
 
+#savings-container .savings-right {
+  width: 80%;
+}
+
 #savings-container .card-row {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  width: 83%;
 }
 
 #savings-container .card {
