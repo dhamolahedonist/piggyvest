@@ -384,7 +384,7 @@ a {
 }
 #savers .savers-box {
   background: #0d60d8;
-  height: 400px;
+  height: 100%;
 }
 #savers h1 {
   font-size: 50px;
@@ -399,6 +399,12 @@ a {
   font-size: 14px;
   text-align: left;
   margin-left: 90px;
+}
+#savers .savers-image {
+  background: url(https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/saver_e664560d5a/saver_e664560d5a.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 130%;
 }
 
 #savers .icon {
@@ -539,4 +545,134 @@ a {
   color: var(--color-secondary);
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+/* Piggyvest session */
+#piggy-invest {
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  display: grid;
+  color: var(--color-primary);
+  margin-top: 10rem;
+}
+#piggy-invest .piggyinvest-container {
+  margin-left: 15rem;
+  margin-top: 15rem;
+}
+#piggy-invest h1 {
+  font-size: 65px;
+}
+#piggy-invest p {
+  font-size: 16.5px;
+}
+#piggy-invest .piggyvest {
+  list-style: none;
+}
+.btn-savings {
+  background: var(--color-secondary);
+  color: #fff;
+}
+/* save container */
+#save-item {
+  text-align: center;
+  margin-top: 10rem;
+}
+#save-item h2 {
+  color: var(--color-primary);
+}
+#save-item p {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+/* saving container */
+#save-container {
+  min-height: 7vw;
+  width: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 10rem;
+  margin-left: 15rem;
+}
+#save-container h2 {
+  font-size: 30px;
+  margin-left: 10rem;
+}
+#save-container p {
+  font-size: 14px;
+  margin-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#save-container a {
+  margin-left: 10rem;
+}
+
+#save-container .save-right {
+  width: 100%;
+}
+
+#save-container .card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#save-container .card {
+  width: 320px;
+  height: 270px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+#save-container img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+#save-container h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+#save-container .save-item {
+  margin-left: 30px;
+  font-size: 13px;
+}
+/* build your savings section */
+#safe {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 50px;
+}
+#safe .safe-box {
+  background: #0d60d8;
+  height: 300px;
+}
+#safe h1 {
+  font-size: 40px;
+  color: #fff;
+  width: 75%;
+  text-align: left;
+  margin-left: 15rem;
+  margin-top: 40px;
+}
+#safe p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 15rem;
+}
+#safe .safe-image {
+  background: url(https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/image_ca24bb2340/image_ca24bb2340.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -70px;
 }
