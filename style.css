@@ -145,21 +145,17 @@ a {
 }
 /* Specific header media queires for mobile */
 @media screen and (max-width: 768px) {
-}
-#header .nav-mobile-menu {
-  display: block;
-  margin-right: 30px;
-}
-.nav-mobile-menu > a {
-  color: #000;
-}
-#header .nav-bar-auth,
-#header .nav-bar {
-  display: none;
-}
-#header {
-  display: flex;
-  justify-content: space-between;
+  #header .nav-mobile-menu {
+    display: block;
+    margin-right: 30px;
+  }
+  .nav-mobile-menu > a {
+    color: #000;
+  }
+  #header .nav-bar-auth,
+  #header .nav-bar {
+    display: none;
+  }
 }
 
 #header .logo {
